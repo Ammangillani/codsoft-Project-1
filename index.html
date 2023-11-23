@@ -4,57 +4,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Protofolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/9.png" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Header -->
+    <!--==================================================== Header ==============================================-->
     <div class="container">
         <div class="nav">
             <div class="name">
-                <ul>
-                    <li>
-                        <h1>Amman Shah</h1>
-                    </li>
-                </ul>
+                <h1>Amman Shah</h1>
             </div>
             <div class="navsection">
-                <p><a href="">About</a></p>
-                <p><a href="">Skill</a></p>
+                <p><a href="#hero">Home</a></p>
+                <p><a href="#about">About</a></p>
+                <p><a href="#skill">Skill</a></p>
                 <p><a href="">Project</a></p>
                 <p><a href="">Contact me</a></p>
             </div>
         </div>
-        <!-- hero section -->
-        <div class="hero">
+        <!--========================================= hero section ======================================-->
+        <div id="hero" class="hero" data-aos="fade-down">
             <div class="heroicon">
-                <a href=""><i class="fa-brands fa-linkedin-in"
-                        style="color: #cf5707;font-size: 3rem;width: 1rem;height:2rem;"></i></a>
-                <a href=""><i class="fa-brands fa-github"
-                        style="color: #cf5707;font-size: 3rem;width: 1rem;height:4rem;"></i></a>
-                <!-- <a href=""></a> -->
+                <a href="https://www.linkedin.com/in/syed-amman-gillani-404-/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in" style="color: #a370f0;font-size: 3rem;height:4rem;"></i></a>
+                <a href=""><i class="fa-brands fa-github" style="color: #a370f0;font-size: 3rem;height:4rem;"></i></a>
+                <a href=""><i class="fa-brands fa-discord" style="color: #a370f0;font-size: 3rem;height:4rem;"></i></a>
             </div>
-            <div class="containerr typer">
+            <div class="heroheadline">
                 <p>Hi,I am Amman Shah</p>
-                <p>I'm a <span class="auto-type"></span> </p>
-                <p>Passionate Frontend Sorcerer: Weaving Magic into Digital Realms with Code and Creativity</p>
+                <span class="auto-type"></span>
+                <p id="headline">Passionate Frontend Sorcerer Weaving Magic into Digital Realms <br>
+                    with Code and Creativity
+                </p>
+                <button class="herobutton">
+                    Contact Me
+                    <a href="mailto:Ammangillani4321@">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #e3e7ed
+                                    }
+                                </style>
+                                <path
+                                    d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                            </svg>
+                        </div>
+                    </a>
+                </button>
+
+            </div>
+            <div class="heroimage">
+                <img id="heroimg" src="./assets/4.png" alt="">
+            </div>
+        </div>
+
+        <!--=================================================== about section ==================================================--->
+
+        <div id="about" class="about">
+            <h1 id="aboutheading">About Me</h1>
+            <div class="aboutwrapper">
+                <div class="aboutimg">
+                    <img id="aboutimage" src="./assets/6.png" alt="">
+                </div>
+                <div class="aboutcontent">
+                    <p> A dedicated frontend developer embarking on an immersive journey into
+                        the realm of MERN stack development. With a focus on crafting seamless user interfaces, I
+                        aim to
+                        merge creativity and technical expertise to deliver compelling digital experiences. Within
+                        my
+                        portfolio, you'll discover a showcase of my evolving skill set, where I'm committed to
+                        refining
+                        my
+                        craft and exploring innovative solutions. Join me as I navigate the intersection of design
+                        and
+                        technology, striving to elevate user interactions through elegant and efficient frontend
+                        solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--=========================================== skill section ======================================================-->
+        <div id="skill" class="skill">
+            <h2 id="skillheading">Skills</h2>
+            <div class="skillset">
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77"
+                        height="28" role="img" aria-label="CSS3">
+                        <title>CSS3</title>
+                        <g shape-rendering="crispEdges">
+                            <rect width="77" height="28" fill="#1572b6" />
+                        </g>
+                        <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+                            text-rendering="geometricPrecision" font-size="100">
+                            <image x="9" y="7" width="14" height="14"
+                                xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPkNTUzM8L3RpdGxlPjxwYXRoIGQ9Ik0xLjUgMGgyMWwtMS45MSAyMS41NjNMMTEuOTc3IDI0bC04LjU2NS0yLjQzOEwxLjUgMHptMTcuMDkgNC40MTNMNS40MSA0LjQxbC4yMTMgMi42MjIgMTAuMTI1LjAwMi0uMjU1IDIuNzE2aC02LjY0bC4yNCAyLjU3M2g2LjE4MmwtLjM2NiAzLjUyMy0yLjkxLjgwNC0yLjk1Ni0uODEtLjE4OC0yLjExaC0yLjYxbC4yOSAzLjg1NUwxMiAxOS4yODhsNS4zNzMtMS41M0wxOC41OSA0LjQxNHoiLz48L3N2Zz4=" />
+                            <text transform="scale(.1)" x="485" y="175" textLength="330" fill="#fff"
+                                font-weight="bold">CSS3</text>
+                        </g>
+                    </svg></span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88.25"
+                        height="28" role="img" aria-label="HTML5">
+                        <title>HTML5</title>
+                        <g shape-rendering="crispEdges">
+                            <rect width="88.25" height="28" fill="#e34f26" />
+                        </g>
+                        <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+                            text-rendering="geometricPrecision" font-size="100">
+                            <image x="9" y="7" width="14" height="14"
+                                xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPkhUTUw1PC90aXRsZT48cGF0aCBkPSJNMS41IDBoMjFsLTEuOTEgMjEuNTYzTDExLjk3NyAyNGwtOC41NjQtMi40MzhMMS41IDB6bTcuMDMxIDkuNzVsLS4yMzItMi43MTggMTAuMDU5LjAwMy4yMy0yLjYyMkw1LjQxMiA0LjQxbC42OTggOC4wMWg5LjEyNmwtLjMyNiAzLjQyNi0yLjkxLjgwNC0yLjk1NS0uODEtLjE4OC0yLjExSDYuMjQ4bC4zMyA0LjE3MUwxMiAxOS4zNTFsNS4zNzktMS40NDMuNzQ0LTguMTU3SDguNTMxeiIvPjwvc3ZnPg==" />
+                            <text transform="scale(.1)" x="541.25" y="175" textLength="442.5" fill="#fff"
+                                font-weight="bold">HTML5</text>
+                        </g>
+                    </svg></span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126.5"
+                        height="28" role="img" aria-label="JAVASCRIPT">
+                        <title>JAVASCRIPT</title>
+                        <g shape-rendering="crispEdges">
+                            <rect width="126.5" height="28" fill="#323330" />
+                        </g>
+                        <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+                            text-rendering="geometricPrecision" font-size="100">
+                            <image x="9" y="7" width="14" height="14"
+                                xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZjdkZjFlIiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+SmF2YVNjcmlwdDwvdGl0bGU+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6bTIyLjAzNCAxOC4yNzZjLS4xNzUtMS4wOTUtLjg4OC0yLjAxNS0zLjAwMy0yLjg3My0uNzM2LS4zNDUtMS41NTQtLjU4NS0xLjc5Ny0xLjE0LS4wOTEtLjMzLS4xMDUtLjUxLS4wNDYtLjcwNS4xNS0uNjQ2LjkxNS0uODQgMS41MTUtLjY2LjM5LjEyLjc1LjQyLjk3Ni45IDEuMDM0LS42NzYgMS4wMzQtLjY3NiAxLjc1NS0xLjEyNS0uMjctLjQyLS40MDQtLjYwMS0uNTg2LS43OC0uNjMtLjcwNS0xLjQ2OS0xLjA2NS0yLjgzNC0xLjAzNGwtLjcwNS4wODljLS42NzYuMTY1LTEuMzIuNTI1LTEuNzEgMS4wMDUtMS4xNCAxLjI5MS0uODExIDMuNTQxLjU2OSA0LjQ3MSAxLjM2NSAxLjAyIDMuMzYxIDEuMjQ0IDMuNjE2IDIuMjA1LjI0IDEuMTctLjg3IDEuNTQ1LTEuOTY2IDEuNDEtLjgxMS0uMTgtMS4yNi0uNTg2LTEuNzU1LTEuMzM2bC0xLjgzIDEuMDUxYy4yMS40OC40NS42ODkuODEgMS4xMDkgMS43NCAxLjc1NiA2LjA5IDEuNjY2IDYuODcxLTEuMDA0LjAyOS0uMDkuMjQtLjcwNS4wNzQtMS42NWwuMDQ2LjA2N3ptLTguOTgzLTcuMjQ1aC0yLjI0OGMwIDEuOTM4LS4wMDkgMy44NjQtLjAwOSA1LjgwNSAwIDEuMjMyLjA2MyAyLjM2My0uMTM4IDIuNzExLS4zMy42ODktMS4xOC42MDEtMS41NjYuNDgtLjM5Ni0uMTk2LS41OTctLjQ2Ni0uODMtLjg1NS0uMDYzLS4xMDUtLjExLS4xOTYtLjEyNy0uMTk2bC0xLjgyNSAxLjEyNWMuMzA1LjYzLjc1IDEuMTcyIDEuMzI0IDEuNTE3Ljg1NS41MSAyLjAwNC42NzUgMy4yMDcuNDA1Ljc4My0uMjI2IDEuNDU4LS42OTEgMS44MTEtMS40MTEuNTEtLjkzLjQwMi0yLjA3LjM5Ny0zLjM0Ni4wMTItMi4wNTQgMC00LjEwOSAwLTYuMTc5bC4wMDQtLjA1NnoiLz48L3N2Zz4=" />
+                            <text transform="scale(.1)" x="732.5" y="175" textLength="825" fill="#fff"
+                                font-weight="bold">JAVASCRIPT</text>
+                        </g>
+                    </svg></span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76"
+                        height="28" role="img" aria-label="LESS">
+                        <title>LESS</title>
+                        <g shape-rendering="crispEdges">
+                            <rect width="76" height="28" fill="#2b4c80" />
+                        </g>
+                        <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+                            text-rendering="geometricPrecision" font-size="100">
+                            <image x="9" y="7" width="14" height="14"
+                                xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPkxlc3M8L3RpdGxlPjxwYXRoIGQ9Ik0zLjU5OCA3LjE1YTcuOTYxIDcuOTYxIDAgMCAwLTEuMDU0LjA2OGMtLjI4MS4wNDEtLjUyLjEyNC0uNzE3LjI0OWExLjE5IDEuMTkgMCAwIDAtLjQ1LjQ5N2MtLjA5OC4yMDgtLjE0LjQ3LS4xNC44MDJWMTAuM2MwIC40MjgtLjA4NC43MzItLjI1My44ODQtLjE2OS4xNjYtLjQ5Mi4yNS0uOTg0LjI1djEuMTZjLjQ3OCAwIC44MTUuMDgzLjk4NC4yNDkuMTY5LjE2Ni4yNTMuNDcuMjUzLjkxMnYxLjU0OGMwIC41OTQuMTgzIDEuMDA5LjU0OCAxLjIzLjM4LjIwNy45ODQuMzE4IDEuODEzLjMxOHYtMS4wNzhjLS4zOTMgMC0uNjQ2LS4wNy0uNzczLS4xOTQtLjEyNi0uMTI0LS4xODMtLjM3My0uMTgzLS43NDZ2LTEuNDY1YzAtLjM3My0uMDk4LS42NjMtLjI4LS44Ny0uMTg0LS4yMDgtLjQ3OS0uMzc0LS44ODYtLjQ4NC4zOTMtLjEyNS42ODgtLjI5Ljg3MS0uNTEyLjE4My0uMjIuMjgxLS41MTEuMjgxLS44N1Y5LjE2N2MwLS4zNi4wNTctLjYwOC4xODMtLjczMy4xMjItLjEyLjQxMi0uMTk1Ljc4Ny0uMnY0LjU0N2MwIC40MTYuMDMuNzY0LjA5IDEuMDQ0LjA1OS4yOC4xNjQuNTIuMzE0LjcyNC4xNS4yMDMuMzU2LjM1LjYxNi40NDMuMjYuMDkzLjU4OS4xNC45ODQuMTQuMDk4IDAgLjIwNS0uMDA3LjMyLS4wMmE1LjMzNiA1LjMzNiAwIDAgMCAuNjUtLjEwN2wtLjAzNi0uOThjLS4yNy4wMzgtLjQ5Mi4wNTctLjY2Ny4wNTctLjM1MyAwLS41OS0uMDkyLS43MTMtLjI3Ni0uMTIyLS4xODMtLjE4My0uNTM0LS4xODMtMS4wNTFWNy4xNDlIMy41OTh6bTE2LjgxOC0uMDAxdjEuMDkyYy4zOTMgMCAuNjQ3LjA2OS43NzMuMTkzLjEyNy4xMjUuMTgzLjM3My4xODMuNzMzdjEuNDY1YzAgLjM1OS4wOTguNjUuMjguODcuMTg0LjIyMi40NzkuMzg3Ljg3Mi41MTItLjQwNy4xMS0uNzAyLjI3Ni0uODg1LjQ4My0uMTgzLjIwOC0uMjgxLjQ5OC0uMjgxLjg3MXYxLjQ2NWMwIC4zNzMtLjA1Ny42MjItLjE4My43NDYtLjEyNi4xMjUtLjM4LjE5NC0uNzczLjE5NHYxLjA3OGMuODMgMCAxLjQzNC0uMTEgMS44MTMtLjMxOC4zNjUtLjIyMS41NDgtLjYzNi41NDgtMS4yM3YtMS41NDhjMC0uNDQyLjA4NS0uNzQ2LjI1My0uOTEyLjE2OS0uMTY2LjUwNi0uMjQ5Ljk4NC0uMjQ5di0xLjE2Yy0uNDkyIDAtLjgxNS0uMDg0LS45ODQtLjI1LS4xNjgtLjE1MS0uMjUzLS40NTYtLjI1My0uODg0VjguNzY2YzAtLjMzMi0uMDQyLS41OTQtLjE0LS44MDFhMS4xOSAxLjE5IDAgMCAwLS40NS0uNDk4IDEuODI4IDEuODI4IDAgMCAwLS43MTctLjI0OSA3LjI1MiA3LjI1MiAwIDAgMC0xLjA0LS4wNjl6bS02LjQ3OSAxLjk3NWMtLjY3NSAwLTEuMjA5LjE0LTEuNTg4LjQyMS0uMzguMjgxLS41NzYuNjg5LS41NzYgMS4yMDkgMCAuNDIyLjExMi43NzMuMzUxIDEuMDI2cy42MTguNDc4IDEuMTUyLjY4OGMuMDQzLjAxNS4xNC4wNTcuMjk2LjExMy40NS4xODMuNzU4LjMxLjkxMy40MzZhLjU5Mi41OTIgMCAwIDEgLjIzOS40NzhjMCAuMjI0LS4wODQuMzkzLS4yNTMuNTA2LS4xNjkuMTEyLS40MDguMTY4LS43MTcuMTY4LS4yOTUgMC0uNjMyLS4wNTYtLjk4NC0uMTU1YTMuOTAxIDMuOTAxIDAgMCAxLS44ODUtLjMzN2wtLjE0IDEuMDRjLjUwNS4yOTYgMS4xOC40MzYgMi4wMzcuNDM2LjcxNyAwIDEuMjY1LS4xNTUgMS42NTktLjQ2NC4zOTMtLjMwOS41OS0uNzU5LjU5LTEuMzM1IDAtLjQzNi0uMTI2LS43ODctLjM4LTEuMDU0LS4yNTItLjI2Ny0uNjMyLS40OTItMS4xNjYtLjY4OS0uMzgyLS4xNS0uODQtLjI3Ny0xLjIwOS0uNTA2YS40NjUuNDY1IDAgMCAxLS4yMjQtLjQyMWMwLS4xODMuMDg0LS4zMjQuMjM5LS40MjIuMTU0LS4wOTguMzY1LS4xNC42NDYtLjE0LjUwNiAwIDEuMDI2LjEyNiAxLjU3NC4zNzlsLjM2NS0uOTU2Yy0uNTYyLS4yOC0xLjIwOC0uNDIxLTEuOTM5LS40MjF6bTQuNTEyIDBjLS42NzUgMC0xLjIxLjE0LTEuNTg5LjQyMS0uMzguMjgxLS41NzYuNjg5LS41NzYgMS4yMDkgMCAuNDIyLjExMi43NzMuMzUxIDEuMDI2LjI0LjI1My42MTkuNDc4IDEuMTUzLjY4OC4wNDIuMDE1LjE0LjA1Ny4yOTUuMTEzLjQ1LjE4My43NTkuMzEuOTE0LjQzNmEuNTkyLjU5MiAwIDAgMSAuMjM4LjQ3OGMwIC4yMjQtLjA4NC4zOTMtLjI1My41MDYtLjE2OC4xMTItLjQwNy4xNjgtLjcxNi4xNjhhMy43MiAzLjcyIDAgMCAxLS45ODQtLjE1NSAzLjkwNCAzLjkwNCAwIDAgMS0uODg2LS4zMzdsLS4xNCAxLjA0Yy41MDYuMjk2IDEuMTguNDM2IDIuMDM4LjQzNi43MDIgMCAxLjI2NS0uMTU1IDEuNjg2LS40NjQuMzk0LS4zMDkuNTktLjc1OS41OS0xLjMzNSAwLS40MzYtLjEyNi0uNzg3LS4zNzktMS4wNTRzLS42MzItLjQ5Mi0xLjE2Ni0uNjg5Yy0uMzkyLS4xNTMtLjg0Mi0uMjc3LTEuMjA5LS41MDZhLjQ2NS40NjUgMCAwIDEtLjIyNS0uNDIxYzAtLjE4My4wODUtLjMyNC4yNC0uNDIyLjE1NC0uMDk4LjM2NC0uMTQuNjQ2LS4xNC41MDYgMCAxLjAyNi4xMjYgMS41NzQuMzc5bC4zMzctLjk1NmMtLjU2Mi0uMjgtMS4yMDktLjQyMS0xLjk0LS40MjF6bS05LjQ2LjAxNGMtLjg0MiAwLTEuNTAzLjI2Ny0xLjk5NS44MTUtLjQ5Mi41NDgtLjczIDEuMjc5LS43MyAyLjE5MiAwIC45NTYuMjUyIDEuNjg3Ljc3MiAyLjIyLjUyLjUzNSAxLjIzNy44MDIgMi4xNjUuODAyLjggMCAxLjQ5LS4xODMgMi4wOC0uNTJsLS4xOTctLjk4NGEzLjY2IDMuNjYgMCAwIDEtMS44MTMuNDkyYy0uNDkyIDAtLjg4Ni0uMTU1LTEuMTY3LS40NS0uMjgtLjI5NS0uNDM1LS43MTYtLjQ1LTEuMjVoMy44NTJ2LS41OTFjMC0uODI5LS4yMjUtMS40OS0uNjYxLTEuOTgyLS40NS0uNDkxLTEuMDU0LS43NDQtMS44NTUtLjc0NHptLS4wMTMuOTgzYy4zOCAwIC42NzQuMTI3Ljg4NS4zOC4yMTEuMjUzLjMyMy42MTguMzIzIDEuMDgySDcuNjdjLjA0Mi0uNDkyLjE4Mi0uODU3LjQwNy0xLjA5Ni4yNTMtLjIzOS41NDgtLjM2Ni45LS4zNjZaIi8+PC9zdmc+" />
+                            <text transform="scale(.1)" x="480" y="175" textLength="320" fill="#fff"
+                                font-weight="bold">LESS</text>
+                        </g>
+                    </svg></span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123.25"
+                        height="28" role="img" aria-label="BOOTSTRAP">
+                        <title>BOOTSTRAP</title>
+                        <g shape-rendering="crispEdges">
+                            <rect width="123.25" height="28" fill="#8511fa" />
+                        </g>
+                        <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+                            text-rendering="geometricPrecision" font-size="100">
+                            <image x="9" y="7" width="14" height="14"
+                                xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPkJvb3RzdHJhcDwvdGl0bGU+PHBhdGggZD0iTTExLjc3IDExLjI0SDkuOTU2VjguMjAyaDIuMTUyYzEuMTcgMCAxLjgzNC41MjIgMS44MzQgMS40NjYgMCAxLjAwOC0uNzczIDEuNTcyLTIuMTc0IDEuNTcyem0uMzI0IDEuMjA2SDkuOTU3djMuMzQ4aDIuMjMxYzEuNDU5IDAgMi4yMzItLjU4NSAyLjIzMi0xLjY4NXMtLjc5NS0xLjY2My0yLjMyNi0xLjY2M3pNMjQgMTEuMzl2MS4yMThjLTEuMTI4LjEwOC0xLjgxNy45NDQtMi4yMjYgMi4yNjgtLjQwNyAxLjMxOS0uNDYzIDIuOTM3LS40MiA0LjE4Ni4wNDUgMS4zLS45NjggMi41LTIuMzM3IDIuNUg0Ljk4NWMtMS4zNyAwLTIuMzgzLTEuMi0yLjMzNy0yLjUuMDQzLTEuMjQ5LS4wMTMtMi44NjctLjQyLTQuMTg2LS40MS0xLjMyNC0xLjEtMi4xNi0yLjIyOC0yLjI2OFYxMS4zOWMxLjEyOC0uMTA4IDEuODE5LS45NDQgMi4yMjctMi4yNjguNDA4LTEuMzE5LjQ2NC0yLjkzNy40Mi00LjE4Ni0uMDQ1LTEuMy45NjgtMi41IDIuMzM4LTIuNWgxNC4wMzJjMS4zNyAwIDIuMzgyIDEuMiAyLjMzNyAyLjUtLjA0MyAxLjI0OS4wMTMgMi44NjcuNDIgNC4xODYuNDA5IDEuMzI0IDEuMDk4IDIuMTYgMi4yMjYgMi4yNjh6bS03LjkyNyAyLjgxN2MwLTEuMzU0LS45NTMtMi4zMzMtMi4zNjgtMi40ODh2LS4wNTdjMS4wNC0uMTY5IDEuODU2LTEuMTM1IDEuODU2LTIuMjEzIDAtMS41MzctMS4yMTMtMi41MzgtMy4wNjItMi41MzhoLTQuMTZ2MTAuMTcyaDQuMTgxYzIuMjE4IDAgMy41NTMtMS4wODYgMy41NTMtMi44NzZ6Ii8+PC9zdmc+" />
+                            <text transform="scale(.1)" x="716.25" y="175" textLength="792.5" fill="#fff"
+                                font-weight="bold">BOOTSTRAP</text>
+                        </g>
+                    </svg></span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99.75"
+                        height="28" role="img" aria-label="NETLIFY">
+                        <title>NETLIFY</title>
+                        <g shape-rendering="crispEdges">
+                            <rect width="99.75" height="28" fill="#000000" />
+                        </g>
+                        <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+                            text-rendering="geometricPrecision" font-size="100">
+                            <image x="9" y="7" width="14" height="14"
+                                xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDBDN0I3IiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+TmV0bGlmeTwvdGl0bGU+PHBhdGggZD0iTTYuNDkgMTkuMDRoLS4yM0w1LjEzIDE3Ljl2LS4yM2wxLjczLTEuNzFoMS4ybC4xNS4xNXYxLjJMNi41IDE5LjA0Wk01LjEzIDYuMzFWNi4xbDEuMTMtMS4xM2guMjNMOC4yIDYuNjh2MS4ybC0uMTUuMTVoLTEuMkw1LjEzIDYuMzFabTkuOTYgOS4wOWgtMS42NWwtLjE0LS4xM3YtMy44M2MwLS42OC0uMjctMS4yLTEuMS0xLjIzLS40MiAwLS45IDAtMS40My4wMmwtLjA3LjA4djQuOTZsLS4xNC4xNEg4LjlsLS4xMy0uMTRWOC43M2wuMTMtLjE0aDMuN2EyLjYgMi42IDAgMCAxIDIuNjEgMi42djQuMDhsLS4xMy4xNFptLTguMzctMi40NEguMTRMMCAxMi44MnYtMS42NGwuMTQtLjE0aDYuNThsLjE0LjE0djEuNjRsLS4xNC4xNFptMTcuMTQgMGgtNi41OGwtLjE0LS4xNHYtMS42NGwuMTQtLjE0aDYuNThsLjE0LjE0djEuNjRsLS4xNC4xNFpNMTEuMDUgNi41NVYxLjY0bC4xNC0uMTRoMS42NWwuMTQuMTR2NC45bC0uMTQuMTRoLTEuNjVsLS4xNC0uMTNabTAgMTUuODF2LTQuOWwuMTQtLjE0aDEuNjVsLjE0LjEzdjQuOTFsLS4xNC4xNGgtMS42NWwtLjE0LS4xNFoiLz48L3N2Zz4=" />
+                            <text transform="scale(.1)" x="598.75" y="175" textLength="557.5" fill="#fff"
+                                font-weight="bold">NETLIFY</text>
+                        </g>
+                    </svg></span>
+
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86.25"
+                        height="28" role="img" aria-label="REACT">
+                        <title>REACT</title>
+                        <g shape-rendering="crispEdges">
+                            <rect width="86.25" height="28" fill="#20232a" />
+                        </g>
+                        <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+                            text-rendering="geometricPrecision" font-size="100">
+                            <image x="9" y="7" width="14" height="14"
+                                xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjNjFkYWZiIiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+UmVhY3Q8L3RpdGxlPjxwYXRoIGQ9Ik0xNC4yMyAxMi4wMDRhMi4yMzYgMi4yMzYgMCAwIDEtMi4yMzUgMi4yMzYgMi4yMzYgMi4yMzYgMCAwIDEtMi4yMzYtMi4yMzYgMi4yMzYgMi4yMzYgMCAwIDEgMi4yMzUtMi4yMzYgMi4yMzYgMi4yMzYgMCAwIDEgMi4yMzYgMi4yMzZ6bTIuNjQ4LTEwLjY5Yy0xLjM0NiAwLTMuMTA3Ljk2LTQuODg4IDIuNjIyLTEuNzgtMS42NTMtMy41NDItMi42MDItNC44ODctMi42MDItLjQxIDAtLjc4My4wOTMtMS4xMDYuMjc4LTEuMzc1Ljc5My0xLjY4MyAzLjI2NC0uOTczIDYuMzY1QzEuOTggOC45MTcgMCAxMC40MiAwIDEyLjAwNGMwIDEuNTkgMS45OSAzLjA5NyA1LjA0MyA0LjAzLS43MDQgMy4xMTMtLjM5IDUuNTg4Ljk4OCA2LjM4LjMyLjE4Ny42OS4yNzUgMS4xMDIuMjc1IDEuMzQ1IDAgMy4xMDctLjk2IDQuODg4LTIuNjI0IDEuNzggMS42NTQgMy41NDIgMi42MDMgNC44ODcgMi42MDMuNDEgMCAuNzgzLS4wOSAxLjEwNi0uMjc1IDEuMzc0LS43OTIgMS42ODMtMy4yNjMuOTczLTYuMzY1QzIyLjAyIDE1LjA5NiAyNCAxMy41OSAyNCAxMi4wMDRjMC0xLjU5LTEuOTktMy4wOTctNS4wNDMtNC4wMzIuNzA0LTMuMTEuMzktNS41ODctLjk4OC02LjM4LS4zMTgtLjE4NC0uNjg4LS4yNzctMS4wOTItLjI3OHptLS4wMDUgMS4wOXYuMDA2Yy4yMjUgMCAuNDA2LjA0NC41NTguMTI3LjY2Ni4zODIuOTU1IDEuODM1LjczIDMuNzA0LS4wNTQuNDYtLjE0Mi45NDUtLjI1IDEuNDQtLjk2LS4yMzYtMi4wMDYtLjQxNy0zLjEwNy0uNTM0LS42Ni0uOTA1LTEuMzQ1LTEuNzI3LTIuMDM1LTIuNDQ3IDEuNTkyLTEuNDggMy4wODctMi4yOTIgNC4xMDUtMi4yOTV6bS05Ljc3LjAyYzEuMDEyIDAgMi41MTQuODA4IDQuMTEgMi4yOC0uNjg2LjcyLTEuMzcgMS41MzctMi4wMiAyLjQ0Mi0xLjEwNy4xMTctMi4xNTQuMjk4LTMuMTEzLjUzOC0uMTEyLS40OS0uMTk1LS45NjQtLjI1NC0xLjQyLS4yMy0xLjg2OC4wNTQtMy4zMi43MTQtMy43MDcuMTktLjA5LjQtLjEyNy41NjMtLjEzMnptNC44ODIgMy4wNWMuNDU1LjQ2OC45MS45OTIgMS4zNiAxLjU2NC0uNDQtLjAyLS44OS0uMDM0LTEuMzQ1LS4wMzQtLjQ2IDAtLjkxNS4wMS0xLjM2LjAzNC40NC0uNTcyLjg5NS0xLjA5NiAxLjM0NS0xLjU2NXpNMTIgOC4xYy43NCAwIDEuNDc3LjAzNCAyLjIwMi4wOTMuNDA2LjU4Mi44MDIgMS4yMDMgMS4xODMgMS44Ni4zNzIuNjQuNzEgMS4yOSAxLjAxOCAxLjk0Ni0uMzA4LjY1NS0uNjQ2IDEuMzEtMS4wMTMgMS45NS0uMzguNjYtLjc3MyAxLjI4OC0xLjE4IDEuODctLjcyOC4wNjMtMS40NjYuMDk4LTIuMjEuMDk4LS43NCAwLTEuNDc3LS4wMzUtMi4yMDItLjA5My0uNDA2LS41ODItLjgwMi0xLjIwNC0xLjE4My0xLjg2LS4zNzItLjY0LS43MS0xLjI5LTEuMDE4LTEuOTQ2LjMwMy0uNjU3LjY0Ni0xLjMxMyAxLjAxMy0xLjk1NC4zOC0uNjYuNzczLTEuMjg2IDEuMTgtMS44NjguNzI4LS4wNjQgMS40NjYtLjA5OCAyLjIxLS4wOTh6bS0zLjYzNS4yNTRjLS4yNC4zNzctLjQ4Ljc2My0uNzA0IDEuMTYtLjIyNS4zOS0uNDM1Ljc4Mi0uNjM1IDEuMTc0LS4yNjUtLjY1Ni0uNDktMS4zMS0uNjc2LTEuOTQ3LjY0LS4xNSAxLjMxNS0uMjgzIDIuMDE1LS4zODZ6bTcuMjYgMGMuNjk1LjEwMyAxLjM2NS4yMyAyLjAwNi4zODctLjE4LjYzMi0uNDA1IDEuMjgyLS42NiAxLjkzMy0uMi0uMzktLjQxLS43ODMtLjY0LTEuMTc0LS4yMjUtLjM5Mi0uNDY1LS43NzQtLjcwNS0xLjE0NnptMy4wNjMuNjc1Yy40ODQuMTUuOTQ0LjMxNyAxLjM3NS40OTggMS43MzIuNzQgMi44NTIgMS43MDggMi44NTIgMi40NzYtLjAwNS43NjgtMS4xMjUgMS43NC0yLjg1NyAyLjQ3NS0uNDIuMTgtLjg4LjM0Mi0xLjM1NS40OTMtLjI4LS45NTgtLjY0Ni0xLjk1Ni0xLjEtMi45OC40NS0xLjAxNy44MS0yLjAxIDEuMDg1LTIuOTY0em0tMTMuMzk1LjAwNGMuMjc4Ljk2LjY0NSAxLjk1NyAxLjEgMi45OC0uNDUgMS4wMTctLjgxMiAyLjAxLTEuMDg2IDIuOTY0LS40ODQtLjE1LS45NDQtLjMxOC0xLjM3LS41LTEuNzMyLS43MzctMi44NTItMS43MDYtMi44NTItMi40NzQgMC0uNzY4IDEuMTItMS43NDIgMi44NTItMi40NzYuNDItLjE4Ljg4LS4zNDIgMS4zNTYtLjQ5NHptMTEuNjc4IDQuMjhjLjI2NS42NTcuNDkgMS4zMTIuNjc2IDEuOTQ4LS42NC4xNTctMS4zMTYuMjktMi4wMTYuMzkuMjQtLjM3NS40OC0uNzYyLjcwNS0xLjE1OC4yMjUtLjM5LjQzNS0uNzg4LjYzNi0xLjE4em0tOS45NDUuMDJjLjIuMzkyLjQxLjc4My42NCAxLjE3NS4yMy4zOS40NjUuNzcyLjcwNSAxLjE0My0uNjk1LS4xMDItMS4zNjUtLjIzLTIuMDA2LS4zODYuMTgtLjYzLjQwNi0xLjI4Mi42Ni0xLjkzM3pNMTcuOTIgMTYuMzJjLjExMi40OTMuMi45NjguMjU0IDEuNDIzLjIzIDEuODY4LS4wNTQgMy4zMi0uNzE0IDMuNzA4LS4xNDcuMDktLjMzOC4xMjgtLjU2My4xMjgtMS4wMTIgMC0yLjUxNC0uODA3LTQuMTEtMi4yOC42ODYtLjcyIDEuMzctMS41MzYgMi4wMi0yLjQ0IDEuMTA3LS4xMTggMi4xNTQtLjMgMy4xMTMtLjU0em0tMTEuODMuMDFjLjk2LjIzNCAyLjAwNi40MTUgMy4xMDcuNTMyLjY2LjkwNSAxLjM0NSAxLjcyNyAyLjAzNSAyLjQ0Ni0xLjU5NSAxLjQ4My0zLjA5MiAyLjI5NS00LjExIDIuMjk1LS4yMi0uMDA1LS40MDYtLjA1LS41NTMtLjEzMi0uNjY2LS4zOC0uOTU1LTEuODM0LS43My0zLjcwMy4wNTQtLjQ2LjE0Mi0uOTQ0LjI1LTEuNDM4em00LjU2LjY0Yy40NC4wMi44OS4wMzQgMS4zNDUuMDM0LjQ2IDAgLjkxNS0uMDEgMS4zNi0uMDM0LS40NC41NzItLjg5NSAxLjA5NS0xLjM0NSAxLjU2NS0uNDU1LS40Ny0uOTEtLjk5My0xLjM2LTEuNTY1eiIvPjwvc3ZnPg==" />
+                            <text transform="scale(.1)" x="531.25" y="175" textLength="422.5" fill="#fff"
+                                font-weight="bold">REACT</text>
+                        </g>
+                    </svg></span>
+
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78"
+                        height="28" role="img" aria-label="SASS">
+                        <title>SASS</title>
+                        <g shape-rendering="crispEdges">
+                            <rect width="78" height="28" fill="hotpink" />
+                        </g>
+                        <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+                            text-rendering="geometricPrecision" font-size="100">
+                            <image x="9" y="7" width="14" height="14"
+                                xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPlNhc3M8L3RpdGxlPjxwYXRoIGQ9Ik0xMiAwYzYuNjI3IDAgMTIgNS4zNzMgMTIgMTJzLTUuMzczIDEyLTEyIDEyUzAgMTguNjI3IDAgMTIgNS4zNzMgMCAxMiAwek05LjYxNSAxNS45OThjLjE3NS42NDUuMTU2IDEuMjQ4LS4wMjQgMS43OTJsLS4wNjUuMThjLS4wMjQuMDYxLS4wNTIuMTItLjA3OC4xNzYtLjE0LjI5LS4zMjYuNTYtLjU1NS44MS0uNjk4Ljc1OS0xLjY3MiAxLjA0Ny0yLjA5LjgwNS0uNDUtLjI2Mi0uMjI2LTEuMzM1LjU4NC0yLjE5Ljg3MS0uOTE4IDIuMTItMS41MDkgMi4xMi0xLjUwOXYtLjAwM2wuMTA4LS4wNjF6bTkuOTExLTEwLjg2MWMtLjU0Mi0yLjEzMy00LjA3Ny0yLjgzNC03LjQyMi0xLjY0NS0xLjk4OS43MDctNC4xNDQgMS44MTgtNS42OTMgMy4yNjdDNC41NjggOC40OCA0LjI3NSA5Ljk4IDQuMzk2IDEwLjYwN2MuNDI3IDIuMjExIDMuNDU3IDMuNjU3IDQuNzAzIDQuNzN2LjAwNmMtLjM2Ny4xOC0zLjA1NiAxLjUyOS0zLjY4NiAyLjkyNS0uNjc1IDEuNDcuMTA1IDIuNTIxLjYxNSAyLjY1NSAxLjU3NS40MzYgMy4xOTUtLjM2IDQuMDY1LTEuNjQ5Ljg0LTEuMjYxLjc2Ni0yLjg4MS40MDQtMy42NzYuNDk2LS4xMzUgMS4wOC0uMTk1IDEuODMtLjEwNCAyLjEwMS4yNCAyLjUyMSAxLjU2IDIuNDMgMi4xLS4wOS41MzktLjUyMy44NTQtLjY3NC45NDQtLjE1LjA5MS0uMTk1LjEyLS4xODEuMTgxLjAxNS4wOS4wOTEuMDkuMjEuMDc1LjE2NS0uMDMgMS4wOTYtLjQ1IDEuMTQxLTEuNDcxLjA0NS0xLjI5LTEuMTg2LTIuNzI5LTMuMzc1LTIuNy0uOS4wMTYtMS40NzEuMDkxLTEuODc1LjI1Ni0uMDMtLjA0NS0uMDYxLS4wNzUtLjEwNS0uMTA1LTEuMzUtMS40NTUtMy44NTUtMi40NzUtMy43NS00LjQxLjAzLS43MDUuMjg1LTIuNTY0IDQuOC00LjgxNCAzLjcwNS0xLjg0NiA2LjY2MS0xLjMzNSA3LjE3MS0uMjEuNzMzIDEuNjA0LTEuNTc2IDQuNTktNS40MzEgNS4wMjQtMS40Ny4xNjUtMi4yMzUtLjQwNC0yLjQzMS0uNjE1LS4yMDktLjIyNS0uMjM5LS4yNC0uMzE0LS4xOTQtLjEyLjA2LS4wNDUuMjU1IDAgLjM3NS4xMi4zLjU4NS44MjUgMS4zOTYgMS4wOTUuNzA0LjIyNSAyLjQzLjM1OSA0LjUtLjQ1IDIuMzI0LS44OTkgNC4xMzktMy40MDUgMy42MTQtNS41MDVsLjA3My4wNjd6Ii8+PC9zdmc+" />
+                            <text transform="scale(.1)" x="490" y="175" textLength="340" fill="#fff"
+                                font-weight="bold">SASS</text>
+                        </g>
+                    </svg></span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87.25"
+                        height="28" role="img" aria-label="FIGMA">
+                        <title>FIGMA</title>
+                        <g shape-rendering="crispEdges">
+                            <rect width="87.25" height="28" fill="#f24e1e" />
+                        </g>
+                        <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+                            text-rendering="geometricPrecision" font-size="100">
+                            <image x="9" y="7" width="14" height="14"
+                                xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPkZpZ21hPC90aXRsZT48cGF0aCBkPSJNMTUuODUyIDguOTgxaC00LjU4OFYwaDQuNTg4YzIuNDc2IDAgNC40OSAyLjAxNCA0LjQ5IDQuNDlzLTIuMDE0IDQuNDkxLTQuNDkgNC40OTF6TTEyLjczNSA3LjUxaDMuMTE3YzEuNjY1IDAgMy4wMTktMS4zNTUgMy4wMTktMy4wMTlzLTEuMzU1LTMuMDE5LTMuMDE5LTMuMDE5aC0zLjExN1Y3LjUxem0wIDEuNDcxSDguMTQ4Yy0yLjQ3NiAwLTQuNDktMi4wMTQtNC40OS00LjQ5UzUuNjcyIDAgOC4xNDggMGg0LjU4OHY4Ljk4MXptLTQuNTg3LTcuNTFjLTEuNjY1IDAtMy4wMTkgMS4zNTUtMy4wMTkgMy4wMTlzMS4zNTQgMy4wMiAzLjAxOSAzLjAyaDMuMTE3VjEuNDcxSDguMTQ4em00LjU4NyAxNS4wMTlIOC4xNDhjLTIuNDc2IDAtNC40OS0yLjAxNC00LjQ5LTQuNDlzMi4wMTQtNC40OSA0LjQ5LTQuNDloNC41ODh2OC45OHpNOC4xNDggOC45ODFjLTEuNjY1IDAtMy4wMTkgMS4zNTUtMy4wMTkgMy4wMTlzMS4zNTUgMy4wMTkgMy4wMTkgMy4wMTloMy4xMTdWOC45ODFIOC4xNDh6TTguMTcyIDI0Yy0yLjQ4OSAwLTQuNTE1LTIuMDE0LTQuNTE1LTQuNDlzMi4wMTQtNC40OSA0LjQ5LTQuNDloNC41ODh2NC40NDFjMCAyLjUwMy0yLjA0NyA0LjUzOS00LjU2MyA0LjUzOXptLS4wMjQtNy41MWEzLjAyMyAzLjAyMyAwIDAgMC0zLjAxOSAzLjAxOWMwIDEuNjY1IDEuMzY1IDMuMDE5IDMuMDQ0IDMuMDE5IDEuNzA1IDAgMy4wOTMtMS4zNzYgMy4wOTMtMy4wNjh2LTIuOTdIOC4xNDh6bTcuNzA0IDBoLS4wOThjLTIuNDc2IDAtNC40OS0yLjAxNC00LjQ5LTQuNDlzMi4wMTQtNC40OSA0LjQ5LTQuNDloLjA5OGMyLjQ3NiAwIDQuNDkgMi4wMTQgNC40OSA0LjQ5cy0yLjAxNCA0LjQ5LTQuNDkgNC40OXptLS4wOTctNy41MDljLTEuNjY1IDAtMy4wMTkgMS4zNTUtMy4wMTkgMy4wMTlzMS4zNTUgMy4wMTkgMy4wMTkgMy4wMTloLjA5OGMxLjY2NSAwIDMuMDE5LTEuMzU1IDMuMDE5LTMuMDE5cy0xLjM1NS0zLjAxOS0zLjAxOS0zLjAxOWgtLjA5OHoiLz48L3N2Zz4=" />
+                            <text transform="scale(.1)" x="536.25" y="175" textLength="432.5" fill="#fff"
+                                font-weight="bold">FIGMA</text>
+                        </g>
+                    </svg></span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109"
+                        height="28" role="img" aria-label="FIREBASE">
+                        <title>FIREBASE</title>
+                        <g shape-rendering="crispEdges">
+                            <rect width="109" height="28" fill="#039be5" />
+                        </g>
+                        <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+                            text-rendering="geometricPrecision" font-size="100">
+                            <image x="9" y="7" width="14" height="14"
+                                xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPkZpcmViYXNlPC90aXRsZT48cGF0aCBkPSJNMy44OSAxNS42NzJMNi4yNTUuNDYxQS41NDIuNTQyIDAgMDE3LjI3LjI4OGwyLjU0MyA0Ljc3MXptMTYuNzk0IDMuNjkybC0yLjI1LTE0YS41NC41NCAwIDAwLS45MTktLjI5NUwzLjMxNiAxOS4zNjVsNy44NTYgNC40MjdhMS42MjEgMS42MjEgMCAwMDEuNTg4IDB6TTE0LjMgNy4xNDdsLTEuODItMy40ODJhLjU0Mi41NDIgMCAwMC0uOTYgMEwzLjUzIDE3Ljk4NHoiLz48L3N2Zz4=" />
+                            <text transform="scale(.1)" x="645" y="175" textLength="650" fill="#fff"
+                                font-weight="bold">FIREBASE</text>
+                        </g>
+                    </svg></span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93.5"
+                        height="28" role="img" aria-label="VERCEL">
+                        <title>VERCEL</title>
+                        <g shape-rendering="crispEdges">
+                            <rect width="93.5" height="28" fill="#000000" />
+                        </g>
+                        <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+                            text-rendering="geometricPrecision" font-size="100">
+                            <image x="9" y="7" width="14" height="14"
+                                xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPlZlcmNlbDwvdGl0bGU+PHBhdGggZD0iTTI0IDIyLjUyNUgwbDEyLTIxLjA1IDEyIDIxLjA1eiIvPjwvc3ZnPg==" />
+                            <text transform="scale(.1)" x="567.5" y="175" textLength="495" fill="#fff"
+                                font-weight="bold">VERCEL</text>
+                        </g>
+                    </svg></span>
+
+
+            </div>
+        </div>
+
+        <!-- ========================================================Project===================================================-->
+        <div class="project">
+            <div class="projectcarusel">
+
             </div>
         </div>
     </div>
-    </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed(".auto-type", {
-            strings: ["programmer", "Textile-engineer", "Freelancer", "MERN-stack-developer", "Software-Engineer"],
+            strings: ["Front-end Developer", "Freelancer",],
             typeSpeed: 150,
             backSpeed: 150,
             looped: true
         })
     </script>
+
 </body>
 
 </html>

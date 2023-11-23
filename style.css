@@ -1,26 +1,31 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
+    overflow: scroll;
+    background-color: #714da6;
 }
 
 .nav {
-    width: 100vw;
-    padding-block: 2rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: blue;
+    background-color: transparent;
+    /* position: fixed; */
+    /* background-color: #714da6\; */
 }
 
 .name {
-    display: flex;
-    flex-direction: row;
+    font-size: 2rem;
+    font-family: caveat;
 }
 
 .navsection {
@@ -31,11 +36,25 @@
     align-items: center;
 }
 
-a {
+.navsection a {
+    font-size: 20px;
+    font-family: poppins;
     text-decoration: none;
+    color: beige;
 }
 
+.navsection a:hover {
+    color: #33027c;
+}
+
+.navsection a:active {
+    color: #33027c;
+}
+
+
+/* ==================================================hero section=================================================== */
 .hero {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -46,12 +65,162 @@ a {
 .heroicon {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: ;
+    justify-content: center;
+    align-items: center;
 }
 
 .heroheadline {
     font-size: 20px;
     font-family: poppins;
     color: black;
+}
+
+#headline {
+    margin: 1rem 0 1rem;
+}
+
+
+.heroimage {
+    width: 40%;
+    height: 100%;
+}
+
+#heroimg {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.herobutton {
+    background: #a370f0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+
+.herobutton .icon {
+    background: black;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    top: 0.3em;
+    transition: all 0.3s;
+}
+
+.herobutton:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.herobutton .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.herobutton:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.herobutton:active .icon {
+    transform: scale(0.95);
+}
+
+/*==================================================================== about section ===================================================*/
+.about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+}
+
+.aboutwrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.aboutimg {
+    width: 100%;
+    height: 100%;
+}
+
+#aboutimage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.aboutcontent {
+    width: 80%;
+}
+
+.aboutcontent p {
+    font-size: 20px;
+    font-family: poppins;
+    /* text-align: center; */
+    text-transform: capitalize;
+    margin-top: 8rem;
+
+}
+
+#aboutheading {
+    font-size: 30px;
+    font-family: poppins;
+}
+
+/* ===================================================================skill section================================================= */
+
+.skill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#skillheading {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: poppins;
+
+
+}
+
+.skillset {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
