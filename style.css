@@ -5,12 +5,16 @@
 }
 
 .container {
+    overflow-x: hidden;
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
-    overflow: scroll;
     background-color: #714da6;
+    position: relative;
+    scroll-behavior: smooth;
 }
+
+
 
 .nav {
     width: 100%;
@@ -26,6 +30,7 @@
 .name {
     font-size: 2rem;
     font-family: caveat;
+    color: #fff;
 }
 
 .navsection {
@@ -34,6 +39,7 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+
 }
 
 .navsection a {
@@ -41,16 +47,35 @@
     font-family: poppins;
     text-decoration: none;
     color: beige;
+    position: relative;
+}
+
+.navsection a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: whitesmoke;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navsection a:hover::after {
+    width: 100%;
+
 }
 
 .navsection a:hover {
-    color: #33027c;
+    color: #af81fe;
+
 }
 
-.navsection a:active {
-    color: #33027c;
-}
+/* -------------------------------------SCROLL BAR---------------------------------------------- */
 
+/* ::-webkit-scrollbar {
+    width: 2px;
+} */
 
 /* ==================================================hero section=================================================== */
 .hero {
@@ -67,6 +92,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.heroicon .fa-brands:hover {
+    /* color: #000; */
+    /* box-shadow: 0 0 10px #fff; */
+    /* background-color: #33027c; */
+
 }
 
 .heroheadline {
@@ -205,6 +237,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem;
 
 }
 
@@ -223,4 +256,139 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+/* ------------------------------------------------Project sectio,------------------------- */
+
+
+/* -------------------------------------contact section */
+
+.contactsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.contactwrapper {
+    font-family: poppins;
+    font-size: 20px;
+}
+
+.contacticonwrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    font-size: 20px;
+    font-family: poppins;
+    color: black;
+    line-height: 3;
+
+}
+
+.mail {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.linkdein {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*------------------------------------------- foooter------------------------------------------------- */
+.footer {
+    width: 100%;
+    background-color: #853fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem;
+    position: relative;
+}
+
+.footercontainer {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: poppins;
+}
+
+.footercontainer span {
+    font-size: 12px;
+}
+
+.footernav {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: poppins;
+
+}
+
+.footernav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.copyright {
+    font-size: 15px;
+    font-family: caveat;
+    color: #fff;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 0;
+}
+
+/*---------------------------------- Media quries -------------------------------------------------------*/
+
+span .fa-solid fa-bars {
+    position: absolute;
+}
+
+@media(max-width:400px) {
+
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: transparent;
+        /* position: fixed; */
+        /* background-color: #714da6\; */
+    }
+
+    .name {
+        font-size: 2rem;
+        font-family: caveat;
+        color: #fff;
+    }
+
+    .navsection {
+        width: 50%;
+        display: none;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navsection a {
+        font-size: 20px;
+        font-family: poppins;
+        text-decoration: none;
+        color: beige;
+    }
 }
