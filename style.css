@@ -259,7 +259,93 @@
 }
 
 /* ------------------------------------------------Project sectio,------------------------- */
+.projectshocase {
+    padding: 50px 0;
+}
 
+.myproject {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myproject h2 {
+    /* text-align: center; */
+    font-size: 35px;
+    font-family: poppins;
+
+}
+
+.myproject span {
+    text-align: center;
+    font-size: 10px;
+    font-family: poppins;
+
+}
+
+.project_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #d80c0c);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    display: flex;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-size: 20px;
+    font-family: poppins;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #714da6;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    /* transform: scale(1.1); */
+    height: 100%;
+}
 
 /* -------------------------------------contact section */
 
