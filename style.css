@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .container {
@@ -49,7 +50,7 @@
     font-size: 20px;
     font-family: poppins;
     text-decoration: none;
-    color: beige;
+    color: #fff;
     position: relative;
 }
 
@@ -75,6 +76,10 @@
 }
 
 #close {
+    display: none;
+}
+
+#spanclose {
     display: none;
 }
 
@@ -124,17 +129,10 @@
 
 }
 
-.heroicon .fa-brands:hover {
-    /* color: #000; */
-    /* box-shadow: 0 0 10px #fff; */
-    /* background-color: #33027c; */
-
-}
-
 .heroheadline {
     font-size: 20px;
     font-family: poppins;
-    color: black;
+    color: #fff;
 }
 
 #headline {
@@ -173,6 +171,12 @@
     height: 2.8em;
     padding-right: 3.3em;
     cursor: pointer;
+}
+
+.auto-type {
+    font-family: poppins;
+    font-size: 24px;
+    color: #9e5dfa;
 }
 
 .herobutton .icon {
@@ -373,6 +377,7 @@
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box 2px solid black;
 }
 
 .work img {
@@ -380,6 +385,7 @@
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    object-fit: cover;
 }
 
 .layer {
@@ -448,7 +454,7 @@
     justify-content: baseline;
     font-size: 20px;
     font-family: poppins;
-    color: black;
+    color: #fff;
     line-height: 3;
 
 }
@@ -505,6 +511,7 @@
 
 }
 
+
 .footernav a {
     text-decoration: none;
     color: #000;
@@ -520,20 +527,149 @@
 .uparrow {
     width: 50px;
     height: 50px;
+    padding: 1rem;
+    color: #000;
+    background-color: #9b61f2;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4rem;
+    right: 1rem;
+    animation: bounce-out-top 8s ease-in;
+    scale: 1;
 
 }
 
-/* scroll thumb and bar  */
-::-webkit-scrollbar {
-    width: 0.6rem;
-    background-color: var(--scroll-bar-color);
-    border-radius: 0.5rem;
+.uparrow:hover {
+    scale: 1.1;
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: var(--scroll-thumb-color);
-    border-radius: 0.5rem;
+.uparrow:active {
+    scale: 0.9;
 }
+
+@-webkit-keyframes bounce-out-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    5% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    15% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    25% {
+        -webkit-transform: translateY(-38px);
+        transform: translateY(-38px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    52% {
+        -webkit-transform: translateY(-75px);
+        transform: translateY(-75px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    70% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(-800px);
+        transform: translateY(-800px);
+        opacity: 0;
+    }
+}
+
+@keyframes bounce-out-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    5% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    15% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    25% {
+        -webkit-transform: translateY(-38px);
+        transform: translateY(-38px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    52% {
+        -webkit-transform: translateY(-75px);
+        transform: translateY(-75px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    70% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(-800px);
+        transform: translateY(-800px);
+        opacity: 0;
+    }
+}
+
 
 
 .copyright {
@@ -557,20 +693,20 @@ span .fa-solid fa-bars {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: start;
         align-items: center;
         background-color: transparent;
-        /* position: fixed; */
-        /* background-color: #714da6\; */
+        gap: 7.5rem;
     }
 
     .name {
-        font-size: 2rem;
+        font-size: 22px;
         font-family: caveat;
         color: #fff;
     }
 
     .hemberg {
+        color: #fff;
         display: block;
     }
 
@@ -585,26 +721,32 @@ span .fa-solid fa-bars {
         width: 100vw;
         z-index: 99;
         height: 100vh;
-        background-color: #000;
+        background-color: #853fff;
         color: #fff;
-        /* position: fixed; */
 
     }
 
     .navsection p {
         padding-top: 3.4rem;
         font-size: 40px;
-        /* font-weight: 600; */
     }
 
     .hemberg span {
-        /* position: fixed; */
         font-size: 2.4rem;
         color: #fff;
     }
 
     .navsection p a {
         font-size: 40px;
+    }
+
+    #spanclose {
+        font-size: 12px;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        color: red;
+        gap: 1rem;
     }
 
     #close {
@@ -696,7 +838,7 @@ span .fa-solid fa-bars {
         text-align: justify;
         text-transform: capitalize;
         margin: 0 0;
-
+        letter-spacing: -1.2px;
 
     }
 
@@ -817,10 +959,10 @@ span .fa-solid fa-bars {
     }
 
     .contacticonwrapper {
-        font-size: 16px;
+        font-size: 14px;
         font-family: poppins;
         color: black;
-        line-height: 3;
+        line-height: 5;
 
     }
 
