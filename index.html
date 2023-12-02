@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protofolio</title>
+    <title>Finfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js">
     <link rel="shortcut icon" href="./assets/9.png" type="image/x-icon">
 
 </head>
@@ -17,29 +17,29 @@
 <body>
     <!--==================================================== Header ==============================================-->
     <div class="container">
-        <div>
-            <span><i class="fa-solid fa-bars"></i></span>
-        </div>
         <div class="nav">
             <div class="name">
                 <h1>Amman Shah</h1>
             </div>
             <div class="navsection">
+                <span><i id="close" class="fa-solid fa-arrow-right" onclick="closemenu()"></i></span>
                 <p><a href="#hero">Home</a></p>
                 <p><a href="#about">About</a></p>
                 <p><a href="#skill">Skill</a></p>
                 <p><a href="#projectshocase">Project</a></p>
                 <p><a href="#contactsection">Contact me</a></p>
             </div>
+            <div class="hemberg">
+                <span><i id="open" class="fa-solid fa-bars" onclick="openmenu()"></i></span>
+            </div>
         </div>
         <!--========================================= hero section ======================================-->
-        <div id="hero" class="hero" data-aos="fade-down">
+        <div id="hero" class="hero">
             <div class="heroicon">
                 <a href="https://www.linkedin.com/in/syed-amman-gillani-404-/" target="_blank"><i
-                        class="fa-brands fa-linkedin-in" style="color: #a370f0;font-size: 3rem;height:4rem;"></i></a>
-                <a href="https://github.com/Ammangillani" target="_blank"><i class="fa-brands fa-github"
-                        style="color: #a370f0;font-size: 3rem;height:4rem;"></i></a>
-                <a href=""><i class="fa-brands fa-discord" style="color: #a370f0;font-size: 3rem;height:4rem;"></i></a>
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Ammangillani" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-discord"></i></a>
             </div>
             <div class="heroheadline">
                 <p>Hi,I am Amman Shah</p>
@@ -71,6 +71,7 @@
             </div>
         </div>
 
+
         <!--=================================================== about section ==================================================--->
 
         <div id="about" class="about">
@@ -95,6 +96,9 @@
                     </p>
                 </div>
             </div>
+            <a id="btna" href="./assets/myresume.pdf" download><button class="btn">
+                    Download Resume<i class="fa-solid fa-file-arrow-down" style="color: #020a18;font-size: 1.4rem;"></i>
+                </button></a>
         </div>
 
         <!--=========================================== skill section ======================================================-->
@@ -289,12 +293,14 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="./assets/22.png">
+                    <img src="./assets/11.webp">
                     <div class="layer">
                         <h3>Calculator</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fuga placeat eum
                             necessitatibus eaque aliquid voluptate dolorem sed, et laborum.</p>
                         <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/Ammangillani" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -346,23 +352,24 @@
                 <a href="mailto:Ammangillani4321@icloud.com"> <i class="fa-solid fa-envelope"
                         style="color: black"></i></a>
             </div>
-            <div class="copyright">
-                <!-- <h2 id="copyright">&copy;&nbsp;Syed Amman Shah</h2> -->
-            </div>
 
+            <div id="uparrow" class="uparrow">
+                <a href="#hero"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+            </div>
         </footer>
+        <div class="copyright">
+            <h2 id="copyright">Copyright © 2023 Amman Shah .All Rights Reserved.</h2>
+        </div>
     </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed(".auto-type", {
-            strings: ["Front-end Developer", "Freelancer",],
+            strings: ["Front-end Developer", "Freelancer", "Mern Developer", "Freelancer"],
             typeSpeed: 150,
             backSpeed: 150,
-            looped: true
+            loop: true
         })
     </script>
     <script src="./app.js"></script>

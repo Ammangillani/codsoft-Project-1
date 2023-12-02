@@ -14,6 +14,9 @@
     scroll-behavior: smooth;
 }
 
+.hemberg {
+    display: none;
+}
 
 
 .nav {
@@ -71,6 +74,10 @@
 
 }
 
+#close {
+    display: none;
+}
+
 /* -------------------------------------SCROLL BAR---------------------------------------------- */
 
 /* ::-webkit-scrollbar {
@@ -92,6 +99,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    scale: 1;
+    margin-bottom: 3rem;
+}
+
+.heroicon i {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+.heroicon i:active {
+    transform: scale(1);
+}
+
+.heroicon i:hover {
+    transform: scale(1.2);
+
 }
 
 .heroicon .fa-brands:hover {
@@ -121,6 +151,7 @@
     width: 100%;
     height: 90%;
     object-fit: cover;
+    filter: drop-shadow(3px 3px 6px #000);
 }
 
 .herobutton {
@@ -190,6 +221,7 @@
 }
 
 .aboutwrapper {
+    padding: 0 2rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -202,7 +234,7 @@
 .aboutimg {
     width: 100%;
     height: 100%;
-    filter: drop-shadow(2px 4px 6px black);
+    filter: drop-shadow(7px 7px 7px black);
 }
 
 #aboutimage {
@@ -217,18 +249,60 @@
 }
 
 .aboutcontent p {
-    font-size: 20px;
+    font-size: 19px;
     font-family: poppins;
-    /* text-align: center; */
+    text-align: justify;
     text-transform: capitalize;
+    color: #fff;
     margin-top: 8rem;
 
 }
 
 #aboutheading {
-    font-size: 30px;
+    font-size: 40px;
     font-family: poppins;
 }
+
+.btn {
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    background: #e3edf7;
+    padding: 1.4em;
+    font-size: 16px;
+    border-radius: 10px;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.5s;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+#btna {
+    text-decoration: none;
+}
+
+.btn:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(0.5em);
+}
+
+.btn i {
+    transition: transform 0.5s;
+}
+
+.btn:hover i {
+    transform: scale(0.9);
+    fill: #333333;
+}
+
+
 
 /* ===================================================================skill section================================================= */
 
@@ -244,8 +318,9 @@
 
 #skillheading {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 40px;
     font-family: poppins;
+    padding-top: 2rem;
 
 
 }
@@ -442,12 +517,32 @@
     justify-content: space-around;
 }
 
+.uparrow {
+    width: 50px;
+    height: 50px;
+
+}
+
+/* scroll thumb and bar  */
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: 0.5rem;
+}
+
+
 .copyright {
-    font-size: 15px;
-    font-family: caveat;
+    padding: 0.5rem 0;
+    font-size: 12px;
+    font-family: poppins;
     color: #fff;
-    position: absolute;
-    bottom: 0;
+    background-color: #262626;
+    text-align: center;
 }
 
 /*---------------------------------- Media quries -------------------------------------------------------*/
@@ -475,20 +570,49 @@ span .fa-solid fa-bars {
         color: #fff;
     }
 
-    .navsection {
-        width: 50%;
-        display: none;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
+    .hemberg {
+        display: block;
     }
 
-    .navsection a {
-        font-size: 20px;
-        font-family: poppins;
-        text-decoration: none;
-        color: beige;
+    .navsection {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 40px;
+        position: absolute;
+        right: -2000px;
+        top: 0;
+        width: 100vw;
+        z-index: 99;
+        height: 100vh;
+        background-color: #000;
+        color: #fff;
+        /* position: fixed; */
+
     }
+
+    .navsection p {
+        padding-top: 3.4rem;
+        font-size: 40px;
+        /* font-weight: 600; */
+    }
+
+    .hemberg span {
+        /* position: fixed; */
+        font-size: 2.4rem;
+        color: #fff;
+    }
+
+    .navsection p a {
+        font-size: 40px;
+    }
+
+    #close {
+        font-size: 2rem;
+        display: block;
+        color: red;
+    }
+
 
     /* ==================================================hero section=================================================== */
     .hero {
@@ -499,6 +623,7 @@ span .fa-solid fa-bars {
         justify-content: space-around;
         align-items: center;
         padding: 0px 3rem;
+
     }
 
     .heroicon {
@@ -548,7 +673,7 @@ span .fa-solid fa-bars {
     .aboutimg {
         width: 100%;
         height: 100%;
-        filter: drop-shadow(2px 4px 6px black);
+        filter: drop-shadow(7px 7px 6px black);
     }
 
 
@@ -566,7 +691,7 @@ span .fa-solid fa-bars {
     }
 
     .aboutcontent p {
-        font-size: 18px;
+        font-size: 17px;
         font-family: poppins;
         text-align: justify;
         text-transform: capitalize;
@@ -578,6 +703,21 @@ span .fa-solid fa-bars {
     #aboutheading {
         font-size: 30px;
         font-family: poppins;
+    }
+
+    .btn {
+
+        display: flex;
+        align-items: center;
+        background: #e3edf7;
+        padding: 1.4em;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        cursor: pointer;
+        transition: transform 0.5s;
+        gap: 12px;
+        margin: 3rem 0;
+
     }
 
     /* ===================================================================skill section================================================= */
@@ -760,9 +900,9 @@ span .fa-solid fa-bars {
     }
 
     .copyright {
-        font-size: 15px;
+        font-size: 8px;
         font-family: poppins;
-        color: honeydew;
+        color: #fff;
 
     }
 }
