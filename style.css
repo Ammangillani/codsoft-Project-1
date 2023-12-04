@@ -957,14 +957,82 @@ span .fa-solid fa-bars {
         border-radius: 10px;
         position: relative;
         overflow: hidden;
+        box-sizing: border-box 2px solid black;
     }
 
     .work img {
         width: 100%;
+        height: 50vh;
         border-radius: 10px;
         display: block;
         transition: transform 0.5s;
+        object-fit: cover;
     }
+
+    .layer {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(126, 34, 240));
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 40px;
+        text-align: center;
+        display: flex;
+        transition: height 0.5s;
+    }
+
+    .layer h3 {
+        font-size: 20px;
+        font-family: poppins;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .layer p {
+        font-size: 12px;
+        font-family: poppins;
+        color: #fff;
+    }
+
+    .layer a {
+        margin-top: 20px;
+        color: #714da6;
+        font-size: 18px;
+        padding: 15px;
+        background: #fff;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .layericon {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .layer a:hover {
+        scale: 1.2;
+
+    }
+
+    .work:hover img {
+        transform: scale(1.1);
+    }
+
+    .work:hover .layer {
+        /* transform: scale(1.1); */
+        height: 100%;
+    }
+
 
     /* ---------------------------------------------------------Contact------------------------------------ */
     .contactsection {
