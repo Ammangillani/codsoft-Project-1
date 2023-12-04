@@ -367,7 +367,7 @@
 
 .project_list {
     margin: 40px 0;
-    padding: 3rem 0;
+    padding: 3rem 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
@@ -382,6 +382,7 @@
 
 .work img {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -391,7 +392,7 @@
 .layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(142, 67, 235));
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(126, 34, 240));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -399,6 +400,7 @@
     overflow: hidden;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     padding: 0 40px;
     text-align: center;
     display: flex;
@@ -409,18 +411,37 @@
     font-size: 20px;
     font-family: poppins;
     margin-bottom: 20px;
+    color: #fff;
+}
+
+.layer p {
+    font-size: 12px;
+    font-family: poppins;
+    color: #fff;
 }
 
 .layer a {
     margin-top: 20px;
     color: #714da6;
     font-size: 18px;
-    line-height: 60px;
+    padding: 15px;
     background: #fff;
-    width: 60px;
-    height: 60px;
-    border: 50%;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
     text-align: center;
+}
+
+.layericon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.layer a:hover {
+    scale: 1.2;
+
 }
 
 .work:hover img {
@@ -677,6 +698,7 @@
     font-size: 12px;
     font-family: poppins;
     color: #fff;
+    text-transform: uppercase;
     background-color: #262626;
     text-align: center;
 }
