@@ -401,7 +401,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 30px;
     text-align: center;
     display: flex;
     transition: height 0.5s;
@@ -426,8 +426,8 @@
     font-size: 18px;
     padding: 15px;
     background: #fff;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     text-align: center;
 }
@@ -967,6 +967,7 @@ span .fa-solid fa-bars {
         display: block;
         transition: transform 0.5s;
         object-fit: cover;
+        filter: blur(2px);
     }
 
     .layer {
