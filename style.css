@@ -564,7 +564,8 @@
     /* height: 40px; */
     padding: 10px 12px;
     color: #000;
-    background-color: #9b61f2;
+    background-color: #82828268;
+    /* background-color: rgba(0, 0, 0, 0.1); */
     text-align: center;
     border-radius: 50%;
     position: absolute;
@@ -572,6 +573,8 @@
     right: 1rem;
     animation: bounce 0.2s ease-in infinite alternate;
     scale: 1;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in;
 
 }
 
